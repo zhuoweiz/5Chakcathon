@@ -4,46 +4,68 @@
 
 	<meta charset="utf-8">
 
-	<meta name="keywords" 
+	<meta name="keywords"
 		content="HTML, CSS, Web Publishing, ITP 104">
 
 	<meta name="description" content="Lecture on Meta Tags and Responsive Web Design.">
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Roboto|Roboto+Slab" rel="stylesheet">
 
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1">
 
-	<title>undecided storage</title>
+	<title>add college</title>
 	<link rel="stylesheet" type="text/css" href="undecided.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 	<script src="js/jquery-3.2.1.js"></script>
 	<script src="js/undecided.js"></script>
+
+	<!-- /*<style type="text/css">
+	/*#header{
+		width: 100%;
+		height: 400px;
+		margin: 0px;
+
+		background-image: url('');
+		background-color: darkgrey;
+		background-size: cover;
+
+		text-align: center;
+		line-height: 400px;
+		color: white;
+		text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
+		font-family: "Arial", Georgia, Sans-serif;
+		font-size: 3em;
+	}*/
+</style>*/ -->
 </head>
 <body>
 
 	<div id="login_bar">
 
-		<a href="undecided.html" ><img id="logo" src="img/fake_logo.png"></a>
+		<a href="main.html" ><img id="logo" src="img/fake_logo.png"></a>
+		<div id = "headtitle">course connect
+		<input class="inputbox" type="text" id="name_id" name="name_name" placeholder="search">
 
-		<a href="undecided-contact.html">
+		<!-- <a href="undecided-contact.html">
 			<div class="login_button">Contact</div>
 		</a>
 		<div class="login_button">Log in</div>
-		<div class="login_button">Sign up</div>
+		<div class="login_button">Sign up</div> -->
 
 	</div>
 
-	<div id="header">
-		<label id="headtitle">FIND YOUR STUDY PARTNERS</label>
+	<!-- <div id="header2">
+		<label id="headtitle">Create college and class name</label>
 		<label id="headtitle_mobile">undecided</label>
-	</div>
+	</div> -->
 
 	<div >
 		<!-- <form id="mailform">
 			<p>Join the mailling list for our updates!</p>
-			
+
 			<input type="email" id="email-id" name="email-name" placeholder="  eg: dota2betterthanlol@gg.com" required>
-		
+
 			<button id="emailsubmitbutton_id" type="button">submit</button>
 		</form> -->
 	</div>
@@ -55,16 +77,16 @@
 		<p>Add your college and class name</p>
 		<div class="form_piece">
 			<p><label for="name_id">your college name: </label></p>
-			<p><input class="inputbox" type="text" id="name_id" name="name_name" placeholder="Cripps College"></p>
-			
+			<p><input class="inputbox2" type="text" id="name_id" name="name_name" placeholder="Scripps College"></p>
+
 		</div>
 
 		<div class="form_piece">
 			<p><label for="js-email">your class name: </label></p>
-			<p><input class="inputbox" type="text" id="email_id" placeholder="CS50"></p>
-			
+			<p><input class="inputbox2" type="text" id="email_id" placeholder="CS60"></p>
+
 		</div>
-		
+
 
 		<button id="js-submit" class="btn btn-control" onclick="submitClick()">Submit</button>
 	</div>
