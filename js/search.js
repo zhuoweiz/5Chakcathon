@@ -30,8 +30,6 @@ function submitted(){
 var name;
 var email;
 var collegeName;
-var a;
-var pN;
 
 function submitClick(){
 
@@ -154,25 +152,6 @@ function showPost(){
 
   document.getElementById('postCollegeName').innerHTML = name;
   document.getElementById('postClassName').innerHTML = email;
-
-  var collegeRef = firebaseRef.child(name+'/'+email +'/'+"posts");
-  collegeRef.once('value', function(snapshot){
-    a = snapshot.exportVal();
-    pN = snapshot.getChildrenCount()-1;
-  });
-
-  for(var i=0;i<pN;i++)
-  {
-    var para = document.createElement("p");
-    var node = document.createTextNode("This is a new paragraph.");
-    para.appendChild(node);
-  }
-
-  console.log(pN);
-
-  var para = document.createElement("p");
-    var node = document.createTextNode("This is a new paragraph.");
-    para.appendChild(node);
 }
 
 
