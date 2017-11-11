@@ -4,95 +4,107 @@
 
 	<meta charset="utf-8">
 
-	<meta name="keywords"
+	<meta name="keywords" 
 		content="HTML, CSS, Web Publishing, ITP 104">
 
 	<meta name="description" content="Lecture on Meta Tags and Responsive Web Design.">
 
-	<link href="https://fonts.googleapis.com/css?family=Crete+Round|Roboto|Roboto+Slab" rel="stylesheet">
-
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1">
 
-	<title>home</title>
+	<title>search</title>
 	<link rel="stylesheet" type="text/css" href="undecided.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 	<script src="js/jquery-3.2.1.js"></script>
+	
+
+	<style type="text/css">
+		
+		#headimg{
+			width: 100%
+			height: 500px;
+		}
+	</style>
 </head>
 <body>
 
 	<div id="login_bar">
 
 		<a href="main.html" ><img id="logo" src="img/fake_logo.png"></a>
-		<!-- <label id="headtitle">course connect</label> -->
-		<div id = "headtitle">course connect
-	 	<input class="inputbox" type="text" id="name_id" name="name_name" placeholder="search">
-		<!-- <a href="undecided-contact.html">
+
+		<a href="undecided-contact.html">
 			<div class="login_button">Contact</div>
 		</a>
 		<div class="login_button">Log in</div>
 		<a href="create_college.html">
 			<div class="login_button">Add class</div>
-		</a> -->
-	</div>
-
-
+		</a>
+		
 	</div>
 
 	<div id="header">
 		<div id="">
 			<!-- <img src="img/library.jpg" class="rellax-item" data-rellax-speed="2"> -->
 		</div>
-
-
-		<!-- <label id="headtitle">course connect</label> -->
+		
+		<label id="headtitle">FIND YOUR STUDY PARTNERS</label>
 		<label id="headtitle_mobile">search</label>
-		<!-- <div class = "button">find your college -->
-		<button class="b b1">find your college</button>
-		<button class="b b1">find your course</button>
-		<button class="b b1">find your professor</button>
-		<!-- </div> -->
-	</div>
-
-	<div class="clearfloat">
-
 	</div>
 
 	<div id='mailform'>
+
+		<p>FIND YOUR CLASSES</p>
 		<div class="form_piece">
 			<p><label for="name_id">your college name: </label></p>
-			<input class="inputbox2" type="text" id="name_id" name="name_name" placeholder="Scripps College">
-
+			<p><input class="inputbox" type="text" id="name_id" name="name_name" placeholder="Cripps College"></p>
+			
 		</div>
 
 		<div class="form_piece">
 			<p><label for="js-email">your class name: </label></p>
-			<p><input class="inputbox2" type="text" id="email_id" placeholder="CS60"></p>
-
+			<p><input class="inputbox" type="text" id="email_id" placeholder="CS50"></p>
+			
 		</div>
+		
 
-
-		<button id="js-submit" class="" onclick="submitClick()">search</button>
+		<button id="js-submit" class="btn btn-control" >search</button>
 	</div>
 
-	<div class=""></div>
+	<div id="submitted_id">SUBMITTED</div>
+
+	<div id="noSuchClass">
+		do you want to add this class <span id="newClassNmae"></span>
+		<button id="addClassButton">add class</button>
+	</div>
 
 
+	<!-- post subpage -->
+	<div id="postPage">
+		<h2 class="title" id="postCollegeName">c:</h2>
+		<h3 class="subtitle" id="postClassName">c: </h3>
+		<hr>
+
+		<button id="postButton">Write new post!</button>
+
+		<input type="text" class="postTitle" id="newPostTitleId" placeholder="sick title" name="">
+		<p></p>
+
+		<textarea rows="8" cols="16" class="post" id="newPostContentId"></textarea>
+
+
+	</div>
+		
 	<hr>
 	<div id="footer">
-		<p>© 5CHACKS best team 2017</p>
+		<p>© pomonahacks best team 2017</p>
 		<p>All rights reserved</p>
 	</div>
 
 	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 	<script src="js/search.js"></script>
 
-	<script type="text/javascript" src="js/rellax.js"></script>
-	<script type="text/javascript">
-		var rellax = new Rellax('.rellax-item');
-	</script>
-	<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	
 
 </body>
 </html>

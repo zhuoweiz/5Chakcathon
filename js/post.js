@@ -1,18 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById("js-submit");
-    // onClick's logic below:
-    if(link!=null)
-    {
-        link.addEventListener('click', function() {
-            submitted();
-        });
-    }
-});
 
-function submitted(){
-    document.getElementById('mailform').style.display = "none";
-    document.getElementById('submitted_id').style.display = "block";
-}
 
 // Initialize Firebase
   var config = {
@@ -25,7 +11,23 @@ function submitted(){
   };
   firebase.initializeApp(config);
 
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById("post");
+    // onClick's logic below:
+    if(link!=null)
+    {
+        link.addEventListener('click', function() {
+            submitted();
+            submitClick();
+        });
+    }
+});
 
+//css modification
+function submitted(){
+}
+
+//post click
 function submitClick(){
 	window.alert("working");
 
@@ -44,14 +46,12 @@ function submitClick(){
 
 
 
-function writeUserData(name, email) {
-  firebase.database().ref(name + '/' + email).set({
-    classNumber: 0,
-    className: email
-  });
 
-  firebase.database().ref(name + '/' + email + '/' + 'posts').set({
-    postNumber: 0
+function post(name, email) {
+
+  firebase.database().ref(name + '/' + email + '/' + 'post').set({
+    title:"wer" ,
+    content: "meeting at 10"
   });
 
 }

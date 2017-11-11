@@ -85,6 +85,15 @@ body{
 	font-size: 0.8em;
 }
 
+/*hiding*/
+#noSuchClass{
+	display: none;
+}
+#postPage{
+	height: 1200px;
+	display: none;
+}
+
 .title{
 	display: block;
 	font-family: 'Roboto Slab', serif;
@@ -205,8 +214,6 @@ body{
 	border-radius: 10px;
 	margin-left: 5px;
 	padding-left: 5px;
-	width: 500px;
-	height: 300px;
 	margin: auto;
 }
 
