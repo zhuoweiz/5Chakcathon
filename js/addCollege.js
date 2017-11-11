@@ -1,13 +1,19 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var link = document.getElementById("js-submit");
-//     // onClick's logic below:
-//     if(link!=null)
-//     {
-//         link.addEventListener('click', function() {
-//             submitted();
-//         });
-//     }
-// });
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById("js-submit");
+    // onClick's logic below:
+    if(link!=null)
+    {
+        link.addEventListener('click', function() {
+            submitted();
+            submitClick();
+        });
+    }
+});
+
+function submitted(){
+    document.getElementById('mailform').style.display = "none";
+    document.getElementById('submitted_id').style.display = "block";
+}
 
 // Initialize Firebase
   var config = {
@@ -24,8 +30,8 @@
 function submitClick(){
 	window.alert("working");
 
-	var name = document.getElementById("name_id").value;
-	var email = document.getElementById("email_id").value;
+	var name = document.getElementById("name_id").value.toLowerCase();
+	var email = document.getElementById("email_id").value.toLowerCase();
 
   var database = firebase.database();
 	var firebaseRef = database.ref();
@@ -38,8 +44,14 @@ function submitClick(){
 }
 
 function writeUserData(name, email) {
-  firebase.database().ref('collge/' + name).set({
-    collegeName: name,
-    class: email
+  firebase.database().ref(name + '/' + email).set({
+    classNumber: 0,
+    className: email
   });
+
+  firebase.database().ref(name + '/' + email + '/' + 'post').set({
+    title:"wer" ,
+    content: "meeting at 10"
+  });
+
 }
