@@ -12,53 +12,63 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1">
 
-	<title>undecided storage</title>
+	<title>search</title>
 	<link rel="stylesheet" type="text/css" href="undecided.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/undecided.js"></script>
 </head>
 <body>
 
 	<div id="login_bar">
 
-		<a href="undecided.html" ><img id="logo" src="img/fake_logo.png"></a>
+		<a href="main.html" ><img id="logo" src="img/fake_logo.png"></a>
 
 		<a href="undecided-contact.html">
 			<div class="login_button">Contact</div>
 		</a>
 		<div class="login_button">Log in</div>
-		<div class="login_button">Sign up</div>
-
+		<a href="create_college.html">
+			<div class="login_button">Add class</div>
+		</a>
+		
 	</div>
 
 	<div id="header">
 		<label id="headtitle">FIND YOUR STUDY PARTNERS</label>
-		<label id="headtitle_mobile">undecided</label>
+		<label id="headtitle_mobile">search</label>
 	</div>
 
-	<div >
-		<!-- <form id="mailform">
-			<p>Join the mailling list for our updates!</p>
+	<div id='mailform'>
+
+		<p>FIND YOUR CLASSES</p>
+		<div class="form_piece">
+			<p><label for="name_id">your college name: </label></p>
+			<p><input class="inputbox" type="text" id="name_id" name="name_name" placeholder="Cripps College"></p>
 			
-			<input type="email" id="email-id" name="email-name" placeholder="  eg: dota2betterthanlol@gg.com" required>
+		</div>
+
+		<div class="form_piece">
+			<p><label for="js-email">your class name: </label></p>
+			<p><input class="inputbox" type="text" id="email_id" placeholder="CS50"></p>
+			
+		</div>
 		
-			<button id="emailsubmitbutton_id" type="button">submit</button>
-		</form> -->
+
+		<button id="js-submit" class="btn btn-control" onclick="submitClick()">search</button>
 	</div>
 
 	<div class=""></div>
-		
+
 		
 	<hr>
 	<div id="footer">
-		<p>© Undecided limited 2017</p>
+		<p>© pomonahacks best team 2017</p>
 		<p>All rights reserved</p>
 	</div>
 
 	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
-	<script src="js/database.js"></script>
+	<script src="js/search.js"></script>
 
 </body>
 </html>
