@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="keywords" 
+		content="HTML, CSS, Web Publishing, ITP 104">
+
+	<meta name="description" content="Lecture on Meta Tags and Responsive Web Design.">
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+
+	<title>undecided storage</title>
+	<link rel="stylesheet" type="text/css" href="undecided.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/undecided.js"></script>
+
+	<style type="text/css">
+	#header{
+		width: 100%;
+		height: 400px;
+		margin: 0px;
+
+		background-image: url('');
+		background-color: black;
+		background-size: cover;
+
+		text-align: center;
+		line-height: 400px;
+		color: white;
+		text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
+		font-family: "Arial", Georgia, Sans-serif;
+		font-size: 3em;
+	}
+</style>
+</head>
+<body>
+
+	<div id="login_bar">
+
+		<a href="main.html" ><img id="logo" src="img/fake_logo.png"></a>
+
+		<a href="undecided-contact.html">
+			<div class="login_button">Contact</div>
+		</a>
+		<div class="login_button">Log in</div>
+		<div class="login_button">Sign up</div>
+
+	</div>
+
+	<div id="header">
+		<label id="headtitle">Add your class</label>
+		<label id="headtitle_mobile">undecided</label>
+	</div>
+
+	<div >
+		<!-- <form id="mailform">
+			<p>Join the mailling list for our updates!</p>
+			
+			<input type="email" id="email-id" name="email-name" placeholder="  eg: dota2betterthanlol@gg.com" required>
+		
+			<button id="emailsubmitbutton_id" type="button">submit</button>
+		</form> -->
+	</div>
+
+	<div class=""></div>
+
+	<div id='mailform'>
+
+		<div class="form_piece">
+			<p><label for="js-email">your class name: </label></p>
+			<p><input class="inputbox" type="text" id="email_id" placeholder="CS50"></p>
+			
+		</div>
+		
+
+		<button id="js-submit" class="btn btn-control" onclick="submitClick()">Submit</button>
+	</div>
+
+	<div id="submitted_id">SUBMITTED</div>
+
+	<h3 id="bigOne"></h3>
+
+	<hr>
+	<div id="footer">
+		<p>© Undecided limited 2017</p>
+		<p>All rights reserved</p>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<script src="js/database.js"></script>
+
+</body>
+</html>
