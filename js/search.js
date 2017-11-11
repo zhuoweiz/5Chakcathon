@@ -53,7 +53,6 @@ function submitClick(){
               alert("I'm sorry, but the class you are looking for doesnt exist");
               document.getElementById('noSuchClass').style.display = "block";
               document.getElementById('submitted_id').style.display = "none";
-
             }
             else{
               showPost();
@@ -81,8 +80,12 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             writeUserData(name, email);
             // submitClick();
+            showPost();
         });
+
     }
+
+    
 
 });
 
@@ -96,16 +99,17 @@ function writeUserData(name, email) {
     postNumber: 0
   });
 
+  document.getElementById('noSuchClass').style.display = "none";
   document.getElementById('submitted_id').style.display = "block";
 
 }
 
 //not yet
-function store() {
-    var storedName = name;
-    var storedEmail = email;
-    document.cookie = "text=" + name +  "; path=/";
-  }
+// function store() {
+//     var storedName = name;
+//     var storedEmail = email;
+//     document.cookie = "text=" + name +  "; path=/";
+//   }
 
 //post
 document.addEventListener('DOMContentLoaded', function() {
