@@ -1,0 +1,161 @@
+body{
+	margin:0px;
+}
+
+#header{
+	width: 100%;
+	height: 400px;
+	margin: 0px;
+
+	background-image: url('img/library.jpg');
+	background-size: cover;
+
+	text-align: center;
+	line-height: 400px;
+	color: white;
+	text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
+	font-family: "Arial", Georgia, Sans-serif;
+	font-size: 3em;
+}
+
+#headtitle_mobile{
+	display: none;
+}
+
+#headtitle{
+	display: block;
+}
+
+#login_bar{
+	width: 100%;
+	height: 50px;
+}
+
+#logo{
+	height: 48px;
+
+	float: left;
+}
+
+#mailform{
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#submitted_id{
+	margin: 20px;
+	text-align: center;
+	display: none;
+	font-weight: bold;
+}
+
+#footer{
+	height: 50px;
+	line-height: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	color: darkgrey;
+	font-size: 0.8em;
+}
+
+
+.login_button{
+	margin-left: 2px;
+	margin-right: 2px;
+
+	width: 100px;
+	height: 48px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	line-height: 48px;
+
+	font-family: "Arial", Georgia, Sans-serif;
+	font-size: 1.2em;
+
+	float: right;
+}
+
+.inputbox{
+	width: 200px;
+	height: 20px;
+}
+
+
+/*testfile*/
+.link{
+	text-align: center;
+	font-size: 2em;
+	color: orange;
+}
+
+
+.login_button:hover{
+	background-color: black;
+	font-size: 110%;
+}
+
+
+
+@media(max-width: 800px){
+	#header{
+		width: 100%;
+		height: 200px;
+		margin: 0px;
+
+		background-image: url('img/headerbackground.png');
+		background-size: cover;
+		background-position: center;
+
+		text-align: center;
+		line-height: 200px;
+		color: white;
+		text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
+		font-family: "Arial", Georgia, Sans-serif;
+	}
+
+	#headtitle{
+		display: none;
+	}
+
+	#headtitle_mobile{
+		display: block;
+	}
+
+	#login_bar{
+	width: 100%;
+	height: 40px;
+	}
+
+	#logo{
+	height: 40px;
+	float: left;
+	}
+
+	.login_button{
+
+	margin-left: 1px;
+	margin-right: 1px;
+
+	width: 60px;
+	height: 40px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+
+	font-family: "Arial", Georgia, Sans-serif;
+	font-size: 0.8em;
+	/*float: right;*/
+}
+	
+	#contactContent{
+		width: 300px;
+		margin: auto;
+		text-align: center;
+	}
+}
