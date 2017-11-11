@@ -8,6 +8,7 @@ body{
 	margin: 0px;
 
 	background-image: url('img/library.jpg');
+	float: right;
 	background-size: cover;
 
 	text-align: center;
@@ -16,6 +17,7 @@ body{
 	text-shadow: 2px 2px black, 2px 2px black, 2px 2px black, 2px 2px black;
 	font-family: "Arial", Georgia, Sans-serif;
 	font-size: 3em;
+	margin-bottom: 10px;
 }
 
 #headtitle_mobile{
